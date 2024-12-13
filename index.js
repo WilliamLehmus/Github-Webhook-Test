@@ -9,7 +9,7 @@ const app = express();
 app.use(express.raw({ type: "application/json" })); // Changed this line
 
 const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET;
-console.log(WEBHOOK_SECRET);
+// console.log(WEBHOOK_SECRET);
 
 app.post("/webhook", (req, res) => {
   // Verify that webhook secret is configured
